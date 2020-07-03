@@ -9,6 +9,11 @@ const routes = [
     name: 'landing-page',
     component: () => import('../views/LandingPage.vue')
   },
+  {
+    path: '/nosotros',
+    name: 'nosotros',
+    component: () => import('../views/Nosotros.vue')
+  },
   // {
   //   path: '/recover-password',
   //   name: 'recover-password',

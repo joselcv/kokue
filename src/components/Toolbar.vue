@@ -4,13 +4,15 @@
   <v-layout>
     <v-tabs id="toolbar"   color="#FF7F00" height="110">
       <v-tabs-slider color="#FF7F00"></v-tabs-slider>
-      <v-flex xs2 style="margin-left:4%; padding-top:35px; margin-right:50px; width:580px">
-      <v-img  src="../../public/img/WEBP/nammu.io@2x.webp" height="35" width="210" />
+      <v-flex  xs2 style="margin-left:1%; padding-top:2px; margin-right:50px; width:580px">
+      <a href="/">
+      <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="120" width="145" />
+      </a>
      </v-flex>
-         <v-tab class="btnToolbar" style="margin-left:-45px">
+         <v-tab class="btnToolbar" style="margin-left:-45px" href="/nosotros">
                   {{labels.us}}
                 </v-tab>
-                        <v-tab class="btnToolbar">
+                        <v-tab class="btnToolbar" href="#titleH2Products">
                   {{ labels.products }}
                 </v-tab>
                         <v-tab class="btnToolbar">

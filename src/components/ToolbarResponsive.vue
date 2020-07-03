@@ -3,10 +3,10 @@
 <template>
   <v-layout>
     <v-flex xs6 style="margin-left:3%;  margin-right:5px; width:580px">
-      <v-img  src="../../public/img/WEBP/nammu.io@2x.webp"  id="img" />
+      <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="115"  id="img" />
      </v-flex>
 <!--  -->
-<v-flex xs2 layout justify-center style="margin:10px 0px 0px 10%;">
+<v-flex xs2 layout justify-center style="margin:30px 0px 0px 10%;">
                <v-btn id="btnIcon" icon>
                  <img src="../../public/img/WEBP/icon_search@2x.webp" id="imgIcon">
                </v-btn>

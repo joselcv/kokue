@@ -104,7 +104,7 @@
     </div>
     <v-layout id="container2" row wrap>
       <v-flex xs12>
-      <v-flex class="hidden-sm-and-down" xs12 layout justify-center style="height:5px; margin:30px 0px 30px 0px">
+      <v-flex class="hidden-sm-and-down" xs12 layout justify-center style="height:5px; margin:80px 0px 100px 0px">
       
           <p align="center" id="titleH2">Compra como si estuvieras en
             el market pero mejor
@@ -119,54 +119,50 @@
       
      </v-flex>
      <v-flex xs12 class="hidden-sm-and-down">
-     <v-layout>
-       <v-flex xs12 md6 layout justify-end style="margin-top:-250px">
-         <img src="../../../public/img/WEBP/image_1@2x.webp" alt="" width="63%" height="500px" style="margin-right:20px">
+     <v-layout mt-5>
+       <v-flex xs12 md6 layout justify-end style="margin-top:-280px">
+         <img src="../../../public/img/WEBP/DURAZNO 4.png" alt="" width="63%" height="400px" style="margin-right:20px">
        </v-flex> 
      <v-flex xs12 md6 style="padding-left:20px;margin-top:-250px">
        <p id="titleContainer2">
-         Contactamos con los mejores productores del campo.
+         Frutas
        </p>
        <p id="paragraphContainer2">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-         Totam mollitia vitae, ab, temporibus, esse placeat eius nam 
-         laborum maxime adipisci rem ducimus officiis.
+         Aquí puedes encontrar todas las frutas frescas que con el 
+         talento de nuestros productores y sus conocimientos 
+         relevados de generación en generación traemos para ti. Haz tu kokupedido.
        </p>
      </v-flex> 
      </v-layout> 
-     <v-layout>
+     <v-layout mt-5 >
      <v-flex xs12 md6 style="margin-top:30px" layout justify-end>
         <v-flex xs12 flex-column>
           <div style="text-align: -webkit-right;">
           <p align="left" id="titleContainer2Left">
-            Escribe tu lista de encargos en
-            nuestra función especializada.
+            Verduras
           </p>
           <p id="paragraphContainer2Left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Totam mollitia vitae, ab, temporibus, esse placeat eius nam 
-            laborum maxime adipisci rem ducimus officiis.
+            Te ofrecemos la frescura de las mejores verduras del mercado que con amor, 
+            son cultivadas por las personas que surcan la tierra día a día. 
           </p>
           </div>
           </v-flex>
         </v-flex>  
         <v-flex xs12 md6 layout justify-start >
-          <img id="imgCenter" src="../../../public/img/WEBP/image_2@2x.webp" alt="" width="63%" height="450px">
+          <img id="imgCenter" src="../../../public/img/WEBP/BROCOLI 2.png" alt="" width="63%" height="350px">
         </v-flex>
     </v-layout>
-    <v-layout >
+    <v-layout mt-5>
     <v-flex xs12 md6 layout justify-end>
-         <img src="../../../public/img/WEBP/image_3@2x.webp" alt="" width="64%" height="250px" style="margin:15px 20px 0px 0px ">
+         <img src="../../../public/img/WEBP/ESPECIAS 1.png" alt="" width="64%" height="250px" style="margin:15px 20px 0px 0px ">
        </v-flex> 
      <v-flex xs12 md6 style="padding-left:20px; margin-top:15px">
        <p id="titleContainer2">
-         Alimentos frescos en la puerta
-          de tu casa y en tiempo record.
+         Hiervas y especias.
        </p>
        <p id="paragraphContainer2">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Totam mollitia vitae, ab, temporibus, esse placeat eius nam 
-            laborum maxime adipisci rem ducimus officiis.
+         Dale sabor a tus comidas y disfruta de todos los matices nuestras especias pueden ofrecerte.
+         Mantén la  creatividad, Kokue te da los ingredientes. 
        </p>
      </v-flex>  
      </v-layout>
@@ -174,47 +170,43 @@
 
     <v-layout class="hidden-md-and-up" row wrap >
          <v-flex xs12 layout justify-center style="margin-top:-400px">
-         <img src="../../../public/img/WEBP/image_1@2x.webp" alt="" width="90%" height="300px" >
+         <img src="../../../public/img/WEBP/DURAZNO 4.png" alt="" width="90%" height="300px" >
        </v-flex> 
      <v-flex xs12 style="padding-left:20px;margin-top:-50px">
        <p align="center" id="titleContainer2Responsive">
-         Contactamos con los mejores productores del campo.
+         Frutas
        </p>
        <p align="center" id="paragraphContainer2Responsive">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-         Totam mollitia vitae, ab, temporibus, esse placeat eius nam 
-         laborum maxime adipisci rem ducimus officiis.
+         Aquí puedes encontrar todas las frutas frescas que con el 
+         talento de nuestros productores y sus conocimientos 
+         relevados de generación en generación traemos para ti. Haz tu kokupedido.
        </p>
      </v-flex> 
      
      <v-flex xs12  layout justify-start >
-          <img id="imgCenter" src="../../../public/img/WEBP/image_2@2x.webp" alt="" width="90%" height="300px">
+          <img id="imgCenter" src="../../../public/img/WEBP/BROCOLI 2.png" alt="" width="90%" height="300px">
       </v-flex>
         <v-flex xs12 style="padding-left:20px;margin-top:50px">
           <p align="center" id="titleContainer2Responsive">
-            Escribe tu lista de encargos en
-            nuestra función especializada.
+            Verduras
           </p>
           <p align="center" id="paragraphContainer2Responsive">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Totam mollitia vitae, ab, temporibus, esse placeat eius nam 
-            laborum maxime adipisci rem ducimus officiis.
+            Te ofrecemos la frescura de las mejores verduras del mercado que con amor, 
+            son cultivadas por las personas que surcan la tierra día a día.
           </p>
           </v-flex>
 
         
     <v-flex xs12 layout justify-center>
-         <img src="../../../public/img/WEBP/image_3@2x.webp" alt="" width="90%" height="300px" >
+         <img src="../../../public/img/WEBP/ESPECIAS 1.png" alt="" width="90%" height="300px" >
        </v-flex> 
      <v-flex xs12 md6 style="padding-left:20px; margin-top:50px;">
        <p align="center" id="titleContainer2Responsive">
-         Alimentos frescos en la puerta
-          de tu casa y en tiempo record.
+         Hiervas y especias.
        </p>
        <p align="center" id="paragraphContainer2Responsive">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Totam mollitia vitae, ab, temporibus, esse placeat eius nam 
-            laborum maxime adipisci rem ducimus officiis.
+         Dale sabor a tus comidas y disfruta de todos los matices nuestras especias pueden ofrecerte.
+         Mantén la  creatividad, Kokue te da los ingredientes.
        </p>
      </v-flex>  
     </v-layout>
@@ -224,18 +216,40 @@
     </v-layout>
 
     <v-layout style="padding:50px 50px 0px 50px;
-    padding-bottom:5%; background-color:#eceeed" row wrap class="hidden-sm-and-down">
+    padding-bottom:5%; background-color:#eceeed" row wrap >
     <v-flex xs12 layout justify-center style="height:5px; margin-bottom:200px" row wrap>
    
-          <p align="center"  id="titleH2Products">Productos y descuentos destacados de la semana
+          <p align="center"  id="titleH2Products">Algunos de nuestros prodctos
             </p>
 
-      <v-flex xs12 layout justify-center>
+      <v-flex xs12 layout justify-center style="margin-bottom:300px">
         <p id="paragraphCenter">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
 labore et dolore magna aliquyam erat, sed diam voluptua.</p>
       </v-flex>
      </v-flex>
-      <VuePerfectScrollbar class="scroll-area" :settings="settings" style="margin:280px 10px 0px 0px;">
+     <v-flex xs12>
+     <carousel 
+          :autoplay="true" 
+          loop 
+          autoplayHoverPause  
+          :nav="false" 
+          center
+          :responsive="{
+            0:{items:1,nav:false },
+            600:{items:2,nav:false,margin:5 },
+          }"
+          style="margin-top:300px"
+          >
+           <Products 
+             v-for="(item,index) in items"
+            :key="index"
+            :imagen="item.img"
+            :title="item.title"
+             />
+  
+          </carousel>
+          </v-flex>
+      <!-- <VuePerfectScrollbar class="scroll-area" :settings="settings" style="margin:280px 10px 0px 0px;">
         <v-layout>
           <v-card
             color="transparent"
@@ -249,10 +263,10 @@ labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             <p align="right" id="pCard">{{item.title}}</p>
           </v-card>
         </v-layout>
-      </VuePerfectScrollbar>
+      </VuePerfectScrollbar> -->
     </v-layout>
 
-   <v-layout style="padding-bottom:5%; padding-top:50px; background-color:#eceeed; " row wrap class="hidden-md-and-up">
+   <!-- <v-layout style="padding-bottom:5%; padding-top:50px; background-color:#eceeed; " row wrap class="hidden-md-and-up">
     <v-flex xs12 layout justify-center style="height:5px; margin-bottom:200px" row wrap>
           <p align="center"  id="titleH2Products">Productos y descuentos destacados de la semana 
             </p>
@@ -276,7 +290,7 @@ labore et dolore magna aliquyam erat, sed diam voluptua.</p>
           </v-card>
         </v-layout>
       </VuePerfectScrollbar>
-    </v-layout>
+    </v-layout> -->
     
     <v-layout row wrap style="background-color:#eceeed; padding-top:10px; height:1050px">
         <v-flex xs12 layout justify-center>
@@ -549,10 +563,10 @@ vender.</p>
       </v-flex>
       <v-flex xs12 md6 style="margin:2% 0% 2% 0% " >
         <div style="font-weight:500; padding-right:2%; padding-left:4%" class="hidden-sm-and-down">
-        <p align="right" class="footer">Creado por nammu.io . Todos los derechos reservados © 2020</p>
+        <!-- <p align="right" class="footer">Creado por nammu.io . Todos los derechos reservados © 2020</p> -->
         </div>
         <v-flex xs12  class="hidden-md-and-up">
-        <p align="center" class="footer">Creado por nammu.io . Todos los derechos reservados © 2020</p>
+        <!-- <p align="center" class="footer">Creado por nammu.io . Todos los derechos reservados © 2020</p> -->
         </v-flex>
       </v-flex>
     </v-layout>
@@ -566,6 +580,9 @@ import VuePerfectScrollbar from "vue-perfect-scrollbar";
 import toolbar from "@/components/Toolbar.vue";
 import toolbarResponsive from "@/components/ToolbarResponsive.vue";
 import {mapState,mapMutations} from 'vuex';
+import carousel from 'vue-owl-carousel';
+import Products from '@/components/Products.vue';
+
 
 export default {
   data: () => ({
@@ -680,6 +697,8 @@ export default {
     ...mapState(["day","hour","minutes","seconds"])
   },
   components: {
+    Products,
+    carousel,
     VuePerfectScrollbar,
      toolbar,
      toolbarResponsive
