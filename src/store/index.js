@@ -14,6 +14,9 @@ export default new Vuex.Store({
     day:null,
   },
   mutations: {
+    // redirect(){
+    //   window.location.href='#titleH2Products';
+    // },
     getDate(state){
       Vue.set(state,'date',new Date);
       Vue.set(state,'year',state.date.getFullYear());

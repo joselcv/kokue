@@ -9,9 +9,9 @@
                    <h3> {{title}} </h3>
                 </v-card-title>
             </v-card-text>
-            <v-card-actions>
+            <!-- <v-card-actions>
                 <v-btn>nuevo</v-btn>
-            </v-card-actions>
+            </v-card-actions> -->
         </v-card>
     </div>
 </template>

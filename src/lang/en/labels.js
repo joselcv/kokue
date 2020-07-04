@@ -43,7 +43,8 @@ const labels_en = {
     identification_document:"Identification document",
     edit_profile_picture:"Edit profile picture",
     attach_file:"Attach file",
-    us:"Us"
+    us:"Us",
+    start:"Start"
 }
 export default{
     labels_en

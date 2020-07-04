@@ -1,8 +1,6 @@
 <!-- Desarrollado por: José luis casanova -->
 <template>
   <v-layout row wrap >
-       <toolbar class="hidden-sm-and-down" />
-       <toolbarResponsive class="hidden-md-and-up" />
     <v-layout id="container"  row wrap layout justify-center>
       <v-flex xs12 layout justify-center>
               <p 
@@ -219,26 +217,27 @@
     padding-bottom:5%; background-color:#eceeed" row wrap >
     <v-flex xs12 layout justify-center style="height:5px; margin-bottom:200px" row wrap>
    
-          <p align="center"  id="titleH2Products">Algunos de nuestros prodctos
+          <p align="center"  id="titleH2Products">Importados y exóticos
             </p>
 
       <v-flex xs12 layout justify-center style="margin-bottom:300px">
-        <p id="paragraphCenter">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <p id="paragraphCenter">Descubre nuevos sabores con nuestros mejores productos exóticos e 
+          importados y haz nuevas recetas para ti y tu familia.</p>
+          
       </v-flex>
      </v-flex>
-     <v-flex xs12>
+     <v-flex xs12 style="margin-bottom:100px;">
+
      <carousel 
           :autoplay="true" 
           loop 
           autoplayHoverPause  
           :nav="false" 
-          center
           :responsive="{
             0:{items:1,nav:false },
             600:{items:2,nav:false,margin:5 },
           }"
-          style="margin-top:300px"
+          id="carusel"
           >
            <Products 
              v-for="(item,index) in items"
@@ -264,6 +263,9 @@ labore et dolore magna aliquyam erat, sed diam voluptua.</p>
           </v-card>
         </v-layout>
       </VuePerfectScrollbar> -->
+    <v-flex xs12 layout justify-center id="btnCarusel">
+      <v-btn color="#FF7F00" dark>Ir a catalogo completo</v-btn>
+    </v-flex>
     </v-layout>
 
    <!-- <v-layout style="padding-bottom:5%; padding-top:50px; background-color:#eceeed; " row wrap class="hidden-md-and-up">
@@ -577,8 +579,9 @@ vender.</p>
 <script>
 import { labels, paragraphs } from "@/lang/lang.js";
 import VuePerfectScrollbar from "vue-perfect-scrollbar";
-import toolbar from "@/components/Toolbar.vue";
-import toolbarResponsive from "@/components/ToolbarResponsive.vue";
+// import toolbar from "@/components/Toolbar.vue";
+// import toolbarResponsive from "@/components/ToolbarResponsive.vue";
+// import inicio from '../../views/inicio.vue';
 import {mapState,mapMutations} from 'vuex';
 import carousel from 'vue-owl-carousel';
 import Products from '@/components/Products.vue';
@@ -700,8 +703,9 @@ export default {
     Products,
     carousel,
     VuePerfectScrollbar,
-     toolbar,
-     toolbarResponsive
+    // inicio
+    //  toolbar,
+    //  toolbarResponsive
   },methods:{
     ...mapMutations(["getDate"])
   },beforeMount(){
@@ -712,6 +716,12 @@ export default {
 };
 </script>
 <style>
+#carusel{
+  margin-top:200px
+}
+#btnCarusel{
+   margin-top:-50px;
+}
 #imgCenter{
   margin:-20% 0px 0px 20px
 }
@@ -1239,6 +1249,13 @@ h2 {
 }
 }
 @media (max-width: 745px) {
+  #carusel{
+  margin-top:300px;
+}
+#btnCarusel{
+   margin-top:-50px;
+   margin-bottom:100px
+}
   #pHead{
   font-size: 30px;
   width: 700px;

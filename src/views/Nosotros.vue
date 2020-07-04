@@ -1,12 +1,10 @@
 <template>
-    <v-layout row wrap>
-        <v-flex xs12>   
-            <toolbar class="hidden-sm-and-down" />
-            <toolbarResponsive class="hidden-md-and-up" />
-       </v-flex>
-       <v-layout class="contenedor" row wrap>
+       <v-layout class="contenedor" row wrap 
+       style="background-image: url(img/WEBP/background@2x.webp);
+            background-size: cover; ">
+          <v-flex xs12>
         <div>
-         <h2 class="titulo">Misión</h2>
+         <h3 class="titulo">Misión</h3>
          <p class="parrafo">  
             Creemos en nuestros productores y en su casta ancestral hecha arte. 
             La intención de Kokue es edificar y promover los altos estándares de calidad 
@@ -19,7 +17,7 @@
          </p>
          </div>
         <div>
-         <h2 class="titulo">Visión </h2>
+         <h3 class="titulo">Visión </h3>
          <p class="parrafo">  
             Para el 2025, Kokue se proyecta como una empresa líder en conciencia sostenible
             y comercialización de productos agrícolas a nivel local y nacional. 
@@ -35,7 +33,7 @@
             </p>
          </div>
         <div>
-         <h2 class="titulo">Valores corporativos  </h2>
+         <h3 class="titulo">Valores corporativos  </h3>
             <h4 class="indice"> 3.1. Estética</h4>
          <p class="parrafo">
                Lo bello se percibe en la esencia y arte cada producto de nuestra compañía. 
@@ -69,23 +67,17 @@
                así le cumplimos a nuestros clientes con los productos de mayor prestigio de la región.  
          </p>
          </div>
+         </v-flex>
          </v-layout>
-         
-    </v-layout>
 </template>
 
 <script>
-import toolbar from '@/components/Toolbar.vue';
-import toolbarResponsive from '@/components/ToolbarResponsive.vue';
 import { labels, paragraphs } from "@/lang/lang.js";
 export default {
     data:()=>({
         labels:labels
     }),
-    components:{
-        toolbar,
-        toolbarResponsive
-    }
+   
 }
 </script>
 
@@ -94,17 +86,21 @@ export default {
         font-family: 'DM Sans', sans-serif !important;
         font-weight: 600;
         margin-top: 50px;
+        color:#539284;
 
     }
     .contenedor{
         padding-left:8%;
         padding-right:8%;
-        margin-top:200px
+        margin-top:150px
     }
     .titulo{
         font-family: 'DM Sans', sans-serif !important;
         margin-top: 50px;
         margin-bottom: 20px;
+        font-size: 40px;
+        color:#539284;
+        
     }
     .parrafo{
          font-family: 'DM Sans', sans-serif !important;

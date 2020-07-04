@@ -1,23 +1,21 @@
 
 <!-- Desarrollado por: José luis casanova -->
 <template>
-  <v-layout>
-    <v-tabs id="toolbar"   color="#FF7F00" height="110">
+  <v-layout fluid>
+    <v-tabs id="toolbar"  color="#FF7F00" height="110" v-model="tab">
       <v-tabs-slider color="#FF7F00"></v-tabs-slider>
-      <v-flex  xs2 style="margin-left:1%; padding-top:2px; margin-right:50px; width:580px">
-      <a href="/">
+      <v-tab>
+
       <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="120" width="145" />
-      </a>
-     </v-flex>
-         <v-tab class="btnToolbar" style="margin-left:-45px" href="/nosotros">
-                  {{labels.us}}
+  </v-tab>
+     
+             <v-tab 
+             v-for="item in items"
+             :key="item"
+             class="btnToolbar" >
+                  {{item}}
                 </v-tab>
-                        <v-tab class="btnToolbar" href="#titleH2Products">
-                  {{ labels.products }}
-                </v-tab>
-                        <v-tab class="btnToolbar">
-                {{ labels.contacts }}
-                </v-tab>
+                
                <div id="textField">
                 <v-text-field solo flat background-color="transparent" prepend-icon="search" style="font-size:18px; margin-top:-5px">
                 </v-text-field>
@@ -31,15 +29,44 @@
                </v-btn>
                </v-flex>
               </v-tabs>
+              <v-tabs-items v-model="tab">
+                  <v-tab-item>
+                       <LandingPage  />
+                    </v-tab-item>
+                  <v-tab-item>
+                       <Nosotros  />
+                    </v-tab-item>
+                  <v-tab-item>
+                       <Productos  />
+                    </v-tab-item>
+                </v-tabs-items>
         </v-layout>
 </template>
 
 <script>
 import {labels} from '@/lang/lang';
+import {mapMutations} from 'vuex';
+import Nosotros from '@/views/Nosotros.vue';
+import LandingPage from '@/views/LandingPage';
+import Productos from '@/views/Productos';
+
+
 export default {
   data:() =>({
-    labels:labels
-  })
+    labels:labels,
+    tab:0,
+    items: [
+          labels.us, labels.products, labels.contacts
+        ],
+  }),
+  components:{
+    Nosotros,
+    LandingPage,
+    Productos
+  },
+  methods: {
+   ...mapMutations(["redirect"])
+  }
 }
 </script>
 <style >

@@ -43,7 +43,8 @@ const labels_es = {
     identification_document:"Documento de identidad",
     edit_profile_picture:"Editar foto de perfíl",
     attach_file:"Adjuntar archivo",
-    us:"Nosotros"
+    us:"Nosotros",
+    start:"Inicio"
 
 
 }

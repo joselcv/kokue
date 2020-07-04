@@ -1,9 +1,10 @@
 
 <!-- Desarrollado por: José luis casanova -->
 <template>
-  <v-layout>
-    <v-flex xs6 style="margin-left:3%;  margin-right:5px; width:580px">
-      <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="115"  id="img" />
+  <v-layout row wrap>
+    <v-layout>
+    <v-flex xs6 style="margin-left:3%; margin-top:1%;  margin-right:5px; width:580px; background-image:url(img/WEBP/logoKokue.jpeg); background-size:90px;">
+      <!-- <v-img  src="../../public/img/WEBP/logoKokue.jpeg" width="60%" height="80%"  id="img" /> -->
      </v-flex>
 <!--  -->
 <v-flex xs2 layout justify-center style="margin:30px 0px 0px 10%;">
@@ -37,42 +38,70 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
-          <v-list-item>
+          <v-list-item >
+            <v-list-item-title>{{ labels.start }}</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item >
+            <v-list-item-title>{{ labels.us }}</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item >
             <v-list-item-title>{{ labels.products }}</v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item >
             <v-list-item-title>{{ labels.education }}</v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item >
             <v-list-item-title>{{ labels.events }}</v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item >
             <v-list-item-title>{{ labels.contacts }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
-    </v-navigation-drawer>
-
+      
+    </v-navigation-drawer>  
+</v-layout>
+    <v-layout>
+      <LandingPage v-if="group===0"/>
+      <Nosotros v-if="group===1"/>
+      <Productos v-if="group===2"/>
+    </v-layout>
 <!-- ///////////////////////////////////////////////////////// -->
+
         </v-layout>
 </template>
 
 <script>
 import {labels} from '@/lang/lang';
+import {mapMutations} from 'vuex';
+import LandingPage from '../views/LandingPage.vue'
+import Nosotros from '../views/Nosotros.vue'
+import Productos from '../views/Productos.vue'
 export default {
   data:() =>({
     labels:labels,
     drawer: false,
-      group: null,
+      group: 0,
   }),
+  components:{
+    LandingPage,
+    Nosotros,
+    Productos
+  },
   watch: {
       group () {
         this.drawer = false
       },
     },
+    methods: {
+   ...mapMutations(["redirect"]),
+   
+  },
 }
 </script>
 <style scoped>
