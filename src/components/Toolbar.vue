@@ -6,7 +6,7 @@
       <v-tabs-slider color="#FF7F00"></v-tabs-slider>
       <v-tab>
 
-      <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="120" width="145" />
+      <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="50" width="200" />
   </v-tab>
      
              <v-tab 

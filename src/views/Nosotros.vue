@@ -1,3 +1,6 @@
+
+
+
 <template>
        <v-layout class="contenedor" row wrap 
        style="background-image: url(img/WEBP/background@2x.webp);

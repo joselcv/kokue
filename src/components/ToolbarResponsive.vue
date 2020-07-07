@@ -3,7 +3,7 @@
 <template>
   <v-layout row wrap>
     <v-layout>
-    <v-flex xs6 style="margin-left:3%; margin-top:1%;  margin-right:5px; width:580px; background-image:url(img/WEBP/logoKokue.jpeg); background-size:90px;">
+    <v-flex xs6 style="margin-left:3%; margin-top:1%;  margin-right:5px; width:580px; background-image:url(img/WEBP/logoKokue.jpeg); background-size:70%">
       <!-- <v-img  src="../../public/img/WEBP/logoKokue.jpeg" width="60%" height="80%"  id="img" /> -->
      </v-flex>
 <!--  -->
