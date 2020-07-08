@@ -12,11 +12,16 @@ export default new Vuex.Store({
     seconds:0,
     month:null,
     day:null,
+    group1: 0
   },
   mutations: {
     // redirect(){
     //   window.location.href='#titleH2Products';
     // },
+
+    changeStateTabToolbar(state,newState){
+      Vue.set(state,'group1',newState);
+    },
     getDate(state){
       Vue.set(state,'date',new Date);
       Vue.set(state,'year',state.date.getFullYear());

@@ -263,9 +263,7 @@
           </v-card>
         </v-layout>
       </VuePerfectScrollbar> -->
-    <v-flex xs12 layout justify-center id="btnCarusel">
-      <v-btn color="#FF7F00" dark>Ir a catalogo completo</v-btn>
-    </v-flex>
+    
     </v-layout>
 
    <!-- <v-layout style="padding-bottom:5%; padding-top:50px; background-color:#eceeed; " row wrap class="hidden-md-and-up">

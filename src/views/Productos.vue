@@ -5,10 +5,24 @@
    >
       
       <v-flex xs12 style="margin-bottom:100px; padding:0px 20px 0px 20px">
+        <v-layout justify-start style="margin-top:50px;">
+          <v-flex xs12 md4 mt-5>
+            <label for="select" style="font-family: 'DM Sans', sans-serif !important; ">Filtrar por:</label>
+              <v-select
+              v-model="seleccion"
+              @change="hola"
+              style="margin-top:10px; font-family: 'DM Sans', sans-serif !important;"
+              id="select"
+              :items="itemSelect"
+              label="--Seleccionar"
+              solo
+            ></v-select>
+          </v-flex>
+        </v-layout>
           <v-flex layout justify-center>
             <h3 
             style="
-            margin-top:100px; 
+             
             font-size:40px;
             font-family: 'DM Sans', sans-serif !important;
             color:#539284;">Frutas</h3>
@@ -16,10 +30,11 @@
                 <carousel 
                   class="carusel1"
                         loop
-                        :nav="false" 
+                        :nav="true" 
                         :responsive="{
-                          0:{items:1,nav:false },
-                          600:{nav:false,margin:15 },
+                          0:{items:1,nav:true },
+                          600:{items:2,nav:true,margin:15 },
+                           830:{items:3,nav:true,margin:15 },
                         }"
                         > 
                         <Catalogo 
@@ -43,10 +58,11 @@
                     <carousel 
                     class="carusel1"
                           loop   
-                          :nav="false" 
+                          :nav="true" 
                           :responsive="{
-                            0:{items:1,nav:false },
-                            600:{items:3,nav:false,margin:15 },
+                            0:{items:1,nav:true },
+                            600:{items:2,nav:true,margin:15 },
+                             830:{items:3,nav:true,margin:15 },
                           }"
                           > 
                           <Catalogo 
@@ -70,10 +86,11 @@
                       <carousel 
                       class="carusel1"
                             loop   
-                            :nav="false" 
+                            :nav="true" 
                             :responsive="{
-                              0:{items:1,nav:false },
-                              600:{items:3,nav:false,margin:15 },
+                              0:{items:1,nav:true },
+                              600:{items:2,nav:true,margin:15 },
+                              830:{items:3,nav:true,margin:15 },
                             }"
                             > 
                             <Catalogo 
@@ -93,6 +110,7 @@ import carousel from 'vue-owl-carousel';
 import Catalogo from '@/components/Catalogo.vue';
 export default {
    data:()=>({
+     seleccion:'',
        items: [
       {
         title: "Pimentón",
@@ -120,12 +138,18 @@ export default {
         title: "Lechuga",
         img: "img/WEBP/product_3@2x.webp"
       },
-    ]
+    ],
+    itemSelect:['Frutas','Verduras','Hierbas y Especias']
    }),
    components:{
       carousel,
       Catalogo
-   }
+   },
+   methods: {
+     hola(){
+       console.log(this.seleccion)
+     }
+   },
 }
 </script>
 <style>

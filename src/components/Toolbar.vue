@@ -2,14 +2,13 @@
 <!-- Desarrollado por: José luis casanova -->
 <template>
   <v-layout fluid>
-    <v-tabs id="toolbar"  color="#FF7F00" height="110" v-model="tab">
+    <v-tabs id="toolbar"  color="#FF7F00" height="110" v-model="group1" @change="hola">
       <v-tabs-slider color="#FF7F00"></v-tabs-slider>
-      <v-tab>
-
-      <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="50" width="200" />
-  </v-tab>
+      <v-tab style="margin-left:-50px;padding-left:50px">
+        <v-img  src="../../public/img/WEBP/logoKokue.jpeg" height="40" width="170" />
+      </v-tab>
      
-             <v-tab 
+             <v-tab
              v-for="item in items"
              :key="item"
              class="btnToolbar" >
@@ -22,14 +21,14 @@
                </div>
                <v-flex xs2 layout justify-center style="margin:auto">
                <v-btn style="width:80px; height:80px" icon>
-                 <img src="../../public/img/WEBP/icon_list@2x.webp" width="50">
+                 <img src="../../public/img/WEBP/icon_list@2x.webp" width="40">
                </v-btn>
-               <v-btn  icon style="margin-left:30px; width:80px; height:80px">
-                 <img src="../../public/img/WEBP/icon_market_empty@2x.webp" width="55">
+               <v-btn  icon style="margin-left:5px; width:80px; height:80px">
+                 <img src="../../public/img/WEBP/icon_market_empty@2x.webp" width="45">
                </v-btn>
                </v-flex>
               </v-tabs>
-              <v-tabs-items v-model="tab">
+              <v-tabs-items v-model="group1">
                   <v-tab-item>
                        <LandingPage  />
                     </v-tab-item>
@@ -45,7 +44,7 @@
 
 <script>
 import {labels} from '@/lang/lang';
-import {mapMutations} from 'vuex';
+import {mapState,mapMutations} from 'vuex';
 import Nosotros from '@/views/Nosotros.vue';
 import LandingPage from '@/views/LandingPage';
 import Productos from '@/views/Productos';
@@ -54,33 +53,40 @@ import Productos from '@/views/Productos';
 export default {
   data:() =>({
     labels:labels,
-    tab:0,
+    group:0,
     items: [
           labels.us, labels.products, labels.contacts
         ],
   }),
+  computed:{
+    ...mapState(["group1"])
+  },
   components:{
     Nosotros,
     LandingPage,
     Productos
   },
   methods: {
-   ...mapMutations(["redirect"])
+   ...mapMutations(["redirect",'changeStateTabToolbar']),
+   hola(obj){
+    this.changeStateTabToolbar(obj)
+   }
   }
 }
 </script>
 <style >
   #toolbar{
     margin-bottom:25px; 
-    margin-right:20px !important;
     position: fixed;
     z-index: 2;
+    width: 100%;
   }
   .btnToolbar{
     font-size:25px !important;
     text-transform: capitalize !important;
     font-family: 'DM Sans', sans-serif !important;
     font-weight: 700;
+
   }
   #textField{
     width:35%;

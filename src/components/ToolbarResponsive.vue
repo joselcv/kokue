@@ -3,7 +3,7 @@
 <template>
   <v-layout row wrap>
     <v-layout>
-    <v-flex xs6 style="margin-left:3%; margin-top:1%;  margin-right:5px; width:580px; background-image:url(img/WEBP/logoKokue.jpeg); background-size:70%">
+    <v-flex xs6 style="margin-left:3%; margin-top:1%;  margin-right:5px; width:580px; background-image:url(img/WEBP/logoKokue.jpeg); background-size:150px">
       <!-- <v-img  src="../../public/img/WEBP/logoKokue.jpeg" width="60%" height="80%"  id="img" /> -->
      </v-flex>
 <!--  -->
@@ -35,7 +35,8 @@
         dense
       >
         <v-list-item-group
-          v-model="group"
+         @change="setVariable"
+          v-model="group1"
           active-class="deep-purple--text text--accent-4"
         >
           <v-list-item >
@@ -51,14 +52,6 @@
           </v-list-item>
 
           <v-list-item >
-            <v-list-item-title>{{ labels.education }}</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item >
-            <v-list-item-title>{{ labels.events }}</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item >
             <v-list-item-title>{{ labels.contacts }}</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
@@ -67,9 +60,9 @@
     </v-navigation-drawer>  
 </v-layout>
     <v-layout>
-      <LandingPage v-if="group===0"/>
-      <Nosotros v-if="group===1"/>
-      <Productos v-if="group===2"/>
+      <LandingPage v-if="group1===0"/>
+      <Nosotros v-if="group1===1"/>
+      <Productos v-if="group1===2"/>
     </v-layout>
 <!-- ///////////////////////////////////////////////////////// -->
 
@@ -78,7 +71,7 @@
 
 <script>
 import {labels} from '@/lang/lang';
-import {mapMutations} from 'vuex';
+import {mapState,mapMutations} from 'vuex';
 import LandingPage from '../views/LandingPage.vue'
 import Nosotros from '../views/Nosotros.vue'
 import Productos from '../views/Productos.vue'
@@ -86,7 +79,7 @@ export default {
   data:() =>({
     labels:labels,
     drawer: false,
-      group: 0,
+    group:0
   }),
   components:{
     LandingPage,
@@ -97,9 +90,14 @@ export default {
       group () {
         this.drawer = false
       },
+    },computed: {
+      ...mapState(["group1"])
     },
     methods: {
-   ...mapMutations(["redirect"]),
+   ...mapMutations(["redirect","changeStateTabToolbar"]),
+   setVariable(obj){
+      this.changeStateTabToolbar(obj)
+   }
    
   },
 }
