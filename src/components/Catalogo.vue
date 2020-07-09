@@ -1,6 +1,6 @@
 <template>
     <v-layout>
-        <v-card width="400px"  elevation="20"  style=" margin:20px 10px 20px 10px; border-radius:10px">
+        <v-card width="350px"  elevation="20"  style=" margin:20px 10px 20px 30px; border-radius:10px">
             <v-card-text>
                   <v-card-title>
                     <v-flex layout justify-center >
@@ -8,8 +8,8 @@
                    </v-flex>
                 </v-card-title>
                 <v-flex layout justify-center>
-                    <v-card elevation="20" width="80%">
-                        <img   :src="imagen" alt="Esta imagen esta rota" style="width:100%; border-radius:5px"/>
+                    <v-card elevation="20">
+                        <img   :src="imagen" alt="Esta imagen esta rota" style="width:200px; height:200px; border-radius:5px"/>
                     </v-card>
                 </v-flex>
             </v-card-text>
@@ -27,7 +27,7 @@
                          <v-btn block dark color="#FF7F00" style="font-size:30px; font-weight:300" @click="coutnt > 0 ? coutnt-- : 0">-</v-btn>
                      </v-flex>
                      <v-flex xs6 style="margin:0px 30px 0px 30px">
-                         <v-card width="35px" height="35px">
+                         <v-card width="85px" height="35px">
                              <v-flex layout justify-center style="padding-top:5px">
                                      {{coutnt}}
                                  </v-flex>

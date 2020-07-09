@@ -4,159 +4,51 @@
             background-size: cover; padding-top:100px"
    >
       
-      <v-flex xs12 style="margin-bottom:100px; padding:0px 20px 0px 20px">
-        <v-layout justify-start style="margin-top:50px;">
+        <v-layout justify-start style="margin-top:50px; margin-left:30px">
           <v-flex xs12 md4 mt-5>
-            <label for="select" style="font-family: 'DM Sans', sans-serif !important; ">Filtrar por:</label>
+            <label  style="font-family: 'DM Sans', sans-serif !important; ">Categoria:</label>
               <v-select
               v-model="seleccion"
               @change="hola"
               style="margin-top:10px; font-family: 'DM Sans', sans-serif !important;"
-              id="select"
               :items="itemSelect"
               label="--Seleccionar"
               solo
             ></v-select>
           </v-flex>
         </v-layout>
-          <v-flex layout justify-center>
-            <h3 
-            style="
-             
-            font-size:40px;
-            font-family: 'DM Sans', sans-serif !important;
-            color:#539284;">Frutas</h3>
-          </v-flex>     
-                <carousel 
-                  class="carusel1"
-                        loop
-                        :nav="true" 
-                        :responsive="{
-                          0:{items:1,nav:true },
-                          600:{items:2,nav:true,margin:15 },
-                           830:{items:3,nav:true,margin:15 },
-                        }"
-                        > 
-                        <Catalogo 
-                          v-for="(item,index) in items"
-                          :key="index"
-                          :imagen="item.img"
-                          :title="item.title"
-                          />
-                
-                        </carousel>
-          </v-flex>
-      <v-flex xs12 style="margin-bottom:100px; padding:0px 20px 0px 20px">
-        <v-flex layout justify-center>
-            <h3 
-            style="
-            margin-top:50px; 
-            font-size:40px;
-            font-family: 'DM Sans', sans-serif !important;
-            color:#539284;">Verduras</h3>
-                </v-flex>  
-                    <carousel 
-                    class="carusel1"
-                          loop   
-                          :nav="true" 
-                          :responsive="{
-                            0:{items:1,nav:true },
-                            600:{items:2,nav:true,margin:15 },
-                             830:{items:3,nav:true,margin:15 },
-                          }"
-                          > 
-                          <Catalogo 
-                            v-for="(item,index) in items"
-                            :key="index"
-                            :imagen="item.img"
-                            :title="item.title"
-                            />
-                  
-                          </carousel>
-      </v-flex>
-      <v-flex xs12 style="margin-bottom:100px; padding:0px 20px 0px 20px">
-            <v-flex layout justify-center>
-                <h3 
-                style="
-                margin-top:50px; 
-                font-size:40px;
-                font-family: 'DM Sans', sans-serif !important;
-                color:#539284;">Hierbas y Especias</h3>
-              </v-flex>  
-                      <carousel 
-                      class="carusel1"
-                            loop   
-                            :nav="true" 
-                            :responsive="{
-                              0:{items:1,nav:true },
-                              600:{items:2,nav:true,margin:15 },
-                              830:{items:3,nav:true,margin:15 },
-                            }"
-                            > 
-                            <Catalogo 
-                              v-for="(item,index) in items"
-                              :key="index"
-                              :imagen="item.img"
-                              :title="item.title"
-                              />
-                    
-                            </carousel>
-          </v-flex>
-      
+
+       <Caruseles v-if="seleccion == 'Todo'" />
+       <FiltradoCategoria  v-if="seleccion != 'Todo' && seleccion != ''" />
+
    </v-layout>
 </template>
 <script>
-import carousel from 'vue-owl-carousel';
-import Catalogo from '@/components/Catalogo.vue';
+
+import Caruseles from '@/components/Caruseles.vue';
+import FiltradoCategoria from '@/components/FiltradoCategoria.vue';
+import {mapMutations} from 'vuex';
+// import VuePerfectScrollbar from "vue-perfect-scrollbar";
 export default {
    data:()=>({
-     seleccion:'',
-       items: [
-      {
-        title: "Pimentón",
-        img: "img/WEBP/product_1@2x.webp"
-      },
-      {
-        title: "Limón Amarillo",
-        img: "img/WEBP/product_2@2x.webp"
-      },
-      {
-        title: "Lechuga",
-        img: "img/WEBP/product_3@2x.webp"
-      },
-    ],
-       items1: [
-      {
-        title: "Pimentón",
-        img: "img/WEBP/product_1@2x.webp"
-      },
-      {
-        title: "Limón Amarillo",
-        img: "img/WEBP/product_2@2x.webp"
-      },
-      {
-        title: "Lechuga",
-        img: "img/WEBP/product_3@2x.webp"
-      },
-    ],
-    itemSelect:['Frutas','Verduras','Hierbas y Especias']
+     
+     seleccion:'Todo',
+     
+    itemSelect:['Todo','Frutas','Verduras','Hierbas y Especias']
    }),
    components:{
-      carousel,
-      Catalogo
+      Caruseles,
+      FiltradoCategoria
+      
    },
    methods: {
+     ...mapMutations(['changeStateCategoria']),
      hola(){
        console.log(this.seleccion)
+       this.changeStateCategoria(this.seleccion)
      }
    },
 }
 </script>
-<style>
-     .carusel{
-       margin-top: 50px;
-     }
-     .carusel1{
-       margin-top: 50px;
-     }
-</style>
+
+

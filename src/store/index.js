@@ -12,13 +12,17 @@ export default new Vuex.Store({
     seconds:0,
     month:null,
     day:null,
-    group1: 0
+    group1: 0,
+    categoria:''
   },
   mutations: {
     // redirect(){
     //   window.location.href='#titleH2Products';
     // },
 
+    changeStateCategoria(state,categoria){
+      Vue.set(state,'categoria',categoria);
+    },
     changeStateTabToolbar(state,newState){
       Vue.set(state,'group1',newState);
     },
