@@ -31,10 +31,8 @@ import {mapMutations} from 'vuex';
 // import VuePerfectScrollbar from "vue-perfect-scrollbar";
 export default {
    data:()=>({
-     
      seleccion:'Todo',
-     
-    itemSelect:['Todo','Frutas','Verduras','Hierbas y Especias']
+     itemSelect:['Todo','Frutas','Verduras','Hierbas y Especias']
    }),
    components:{
       Caruseles,

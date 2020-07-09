@@ -12,7 +12,7 @@
           </v-flex>     
                 <carousel 
                   class="carusel1"
-                        loop
+                        
                         :nav="true" 
                         :responsive="{
                           0:{items:1,nav:true },
@@ -21,7 +21,7 @@
                         }"
                         > 
                         <Catalogo 
-                          v-for="(item,index) in items"
+                          v-for="(item,index) in frutas"
                           :key="index"
                           :imagen="item.img"
                           :title="item.title"
@@ -41,7 +41,7 @@
                 </v-flex>  
                     <carousel 
                     class="carusel1"
-                          loop   
+                             
                           :nav="true" 
                           :responsive="{
                             0:{items:1,nav:true },
@@ -50,7 +50,7 @@
                           }"
                           > 
                           <Catalogo 
-                            v-for="(item,index) in items"
+                            v-for="(item,index) in verduras"
                             :key="index"
                             :imagen="item.img"
                             :title="item.title"
@@ -70,7 +70,7 @@
               </v-flex>  
                       <carousel 
                       class="carusel1"
-                            loop   
+                               
                             :nav="true" 
                             :responsive="{
                               0:{items:1,nav:true },
@@ -79,7 +79,7 @@
                             }"
                             > 
                             <Catalogo 
-                              v-for="(item,index) in items"
+                              v-for="(item,index) in HiervasEspecias"
                               :key="index"
                               :imagen="item.img"
                               :title="item.title"
@@ -94,36 +94,14 @@
 <script>
 import carousel from 'vue-owl-carousel';
 import Catalogo from '@/components/Catalogo.vue';
+import frutas from '@/components/listados/ListOfFrutas.js';
+import verduras from '@/components/listados/ListOfVerduras.js';
+import HiervasEspecias from '@/components/listados/ListOfHierbasEspecias.js';
 export default {
     data:()=>({
-         items: [
-      {
-        title: "Pimentón",
-        img: "img/WEBP/product_1@2x.webp"
-      },
-      {
-        title: "Limón Amarillo",
-        img: "img/WEBP/product_2@2x.webp"
-      },
-      {
-        title: "Lechuga",
-        img: "img/WEBP/product_3@2x.webp"
-      },
-    ],
-       items1: [
-      {
-        title: "Pimentón",
-        img: "img/WEBP/product_1@2x.webp"
-      },
-      {
-        title: "Limón Amarillo",
-        img: "img/WEBP/product_2@2x.webp"
-      },
-      {
-        title: "Lechuga",
-        img: "img/WEBP/product_3@2x.webp"
-      },
-    ],
+        frutas:frutas,
+        verduras:verduras,
+        HiervasEspecias:HiervasEspecias
     }),
     components:{
         carousel,
