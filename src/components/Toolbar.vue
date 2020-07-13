@@ -38,6 +38,9 @@
                   <v-tab-item>
                        <Productos  />
                     </v-tab-item>
+                  <v-tab-item>
+                       <Contactos  />
+                    </v-tab-item>
                 </v-tabs-items>
         </v-layout>
 </template>
@@ -48,6 +51,7 @@ import {mapState,mapMutations} from 'vuex';
 import Nosotros from '@/views/Nosotros.vue';
 import LandingPage from '@/views/LandingPage';
 import Productos from '@/views/Productos';
+import Contactos from '@/views/Contactos';
 
 
 export default {
@@ -64,7 +68,8 @@ export default {
   components:{
     Nosotros,
     LandingPage,
-    Productos
+    Productos,
+    Contactos
   },
   methods: {
    ...mapMutations(["redirect",'changeStateTabToolbar']),

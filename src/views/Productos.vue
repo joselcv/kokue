@@ -4,8 +4,8 @@
             background-size: cover; padding-top:100px"
    >
       
-        <v-layout justify-start style="margin-top:50px; margin-left:30px">
-          <v-flex xs12 md4 mt-5>
+        <v-layout justify-start style="margin-top:50px; padding-left:30px">
+          <v-flex xs11 md4  mt-5>
             <label  style="font-family: 'DM Sans', sans-serif !important; ">Categoria:</label>
               <v-select
               v-model="seleccion"

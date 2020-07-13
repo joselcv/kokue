@@ -37,7 +37,7 @@
         <v-list-item-group
          @change="setVariable"
           v-model="group1"
-          active-class="deep-purple--text text--accent-4"
+          active-class="colorSelect text--accent-4"
         >
           <v-list-item >
             <v-list-item-title>{{ labels.start }}</v-list-item-title>
@@ -63,6 +63,7 @@
       <LandingPage v-if="group1===0"/>
       <Nosotros v-if="group1===1"/>
       <Productos v-if="group1===2"/>
+      <Contactos v-if="group1===3"/>
     </v-layout>
 <!-- ///////////////////////////////////////////////////////// -->
 
@@ -75,6 +76,7 @@ import {mapState,mapMutations} from 'vuex';
 import LandingPage from '../views/LandingPage.vue'
 import Nosotros from '../views/Nosotros.vue'
 import Productos from '../views/Productos.vue'
+import Contactos from '@/views/Contactos';
 export default {
   data:() =>({
     labels:labels,
@@ -84,7 +86,8 @@ export default {
   components:{
     LandingPage,
     Nosotros,
-    Productos
+    Productos,
+    Contactos
   },
   watch: {
       group () {
@@ -103,6 +106,10 @@ export default {
 }
 </script>
 <style scoped>
+.colorSelect{
+  background-color: #FF7F00;
+  color: white;
+}
   #toolbar{
     margin-top:20px; 
     margin-bottom:25px; 

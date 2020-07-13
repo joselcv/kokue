@@ -1,186 +1,186 @@
 module.exports = verduras = [
     {
       title: "ACELGA",
-      img: "img/prodctos/Verduras/ACELGA.png"
+      img: "img/prodctos/VerdurasWepb/ACELGA.webp"
     },
     {
       title: "AJI",
-      img: "img/prodctos/Verduras/AJI.png"
+      img: "img/prodctos/VerdurasWepb/AJI.webp"
     },
     {
       title: "AJO",
-      img: "img/prodctos/Verduras/AJO.png"
+      img: "img/prodctos/VerdurasWepb/AJO.webp"
     },
     {
       title: "ALBERJA",
-      img: "img/prodctos/Verduras/ALBERJA.png"
+      img: "img/prodctos/VerdurasWepb/ALBERJA.webp"
     },
     {
       title: "APIO",
-      img: "img/prodctos/Verduras/APIO.png"
+      img: "img/prodctos/VerdurasWepb/APIO.webp"
     },
     {
       title: "ARRACACHA",
-      img: "img/prodctos/Verduras/ARRACACHA.png"
+      img: "img/prodctos/VerdurasWepb/ARRACACHA.webp"
     },
     {
       title: "BERENJENA",
-      img: "img/prodctos/Verduras/BERENJENA.png"
+      img: "img/prodctos/VerdurasWepb/BERENJENA.webp"
     },
     {
       title: "BROCOLI",
-      img: "img/prodctos/Verduras/BROCOLI.png"
+      img: "img/prodctos/VerdurasWepb/BROCOLI.webp"
     },
     {
       title: "CALABAZIN",
-      img: "img/prodctos/Verduras/CALABAZIN.png"
+      img: "img/prodctos/VerdurasWepb/CALABAZIN.webp"
     },
     {
       title: "CALABAZIN AMARILLO",
-      img: "img/prodctos/Verduras/CALABAZINAMARILLO.png"
+      img: "img/prodctos/VerdurasWepb/CALABAZINAMARILLO.webp"
     },
     {
       title: "CEBOLLA CABEZONA",
-      img: "img/prodctos/Verduras/CEBOLLACABEZONA.png"
+      img: "img/prodctos/VerdurasWepb/CEBOLLACABEZONA.webp"
     },
     {
       title: "CEBOLLA LARGA",
-      img: "img/prodctos/Verduras/CEBOLLALARGA.png"
+      img: "img/prodctos/VerdurasWepb/CEBOLLALARGA.webp"
     },
     {
       title: "CEBOLLA MORADA",
-      img: "img/prodctos/Verduras/CEBOLLAMORADA.png"
+      img: "img/prodctos/VerdurasWepb/CEBOLLAMORADA.webp"
     },
     {
       title: "CEBOLLA PUERRO",
-      img: "img/prodctos/Verduras/CEBOLLAPUERRO.png"
+      img: "img/prodctos/VerdurasWepb/CEBOLLAPUERRO.webp"
     },
     {
       title: "CEBOLLIN",
-      img: "img/prodctos/Verduras/CEBOLLIN.png"
+      img: "img/prodctos/VerdurasWepb/CEBOLLIN.webp"
     },
     {
       title: "COLIFLOR",
-      img: "img/prodctos/Verduras/COLIFLOR.png"
+      img: "img/prodctos/VerdurasWepb/COLIFLOR.webp"
     },
     {
-      title: "COLL BRUCELAS.png",
-      img: "img/prodctos/Verduras/COLLBRUCELAS.png"
+      title: "COLL BRUCELAS",
+      img: "img/prodctos/VerdurasWepb/COLLBRUCELAS.webp"
     },
     {
       title: "COLL CHINA",
-      img: "img/prodctos/Verduras/COLLCHINA.png"
+      img: "img/prodctos/VerdurasWepb/COLLCHINA.webp"
     },
     {
       title: "COLL RIZADA",
-      img: "img/prodctos/Verduras/COLLRIZADA.png"
+      img: "img/prodctos/VerdurasWepb/COLLRIZADA.webp"
     },
     {
       title: "CURUMA",
-      img: "img/prodctos/Verduras/CURUMA.png"
+      img: "img/prodctos/VerdurasWepb/CURUMA.webp"
     },
     {
       title: "FRIJOL VERDE DESGRANADO",
-      img: "img/prodctos/Verduras/FRIJOLVERDEDESGRANADO.png"
+      img: "img/prodctos/VerdurasWepb/FRIJOLVERDEDESGRANADO.webp"
     },
     {
       title: "HABA",
-      img: "img/prodctos/Verduras/HABA.png"
+      img: "img/prodctos/VerdurasWepb/HABA.webp"
     },
     {
       title: "HABICHUELA",
-      img: "img/prodctos/Verduras/HABICHUELA.png"
+      img: "img/prodctos/VerdurasWepb/HABICHUELA.webp"
     },
     {
       title: "JALAPEÑO",
-      img: "img/prodctos/Verduras/JALAPEÑO.png"
+      img: "img/prodctos/VerdurasWepb/JALAPEÑO.webp"
     },
     {
       title: "JENGIBRE",
-      img: "img/prodctos/Verduras/JENGIBRE.png"
+      img: "img/prodctos/VerdurasWepb/JENGIBRE.webp"
     },
     {
       title: "LECHUGA",
-      img: "img/prodctos/Verduras/LECHUGA.png"
+      img: "img/prodctos/VerdurasWepb/LECHUGA.webp"
     },
     {
       title: "LECHUGA BATAVIA",
-      img: "img/prodctos/Verduras/LECHUGABATAVIA.png"
+      img: "img/prodctos/VerdurasWepb/LECHUGABATAVIA.webp"
     },
     {
       title: "LECHUGA COGOLLITOS",
-      img: "img/prodctos/Verduras/LECHUGACOGOLLITOS.png"
+      img: "img/prodctos/VerdurasWepb/LECHUGACOGOLLITOS.webp"
     },
     {
       title: "LECHUGA MORADA",
-      img: "img/prodctos/Verduras/LECHUGAMORADA.png"
+      img: "img/prodctos/VerdurasWepb/LECHUGAMORADA.webp"
     },
     {
       title: "LECHUGA ROMANA",
-      img: "img/prodctos/Verduras/LECHUGAROMANA.png"
+      img: "img/prodctos/VerdurasWepb/LECHUGAROMANA.webp"
     },
     {
       title: "MAZORCA",
-      img: "img/prodctos/Verduras/MAZORCA.png"
+      img: "img/prodctos/VerdurasWepb/MAZORCA.webp"
     },
     {
       title: "PAPA",
-      img: "img/prodctos/Verduras/PAPA.png"
+      img: "img/prodctos/VerdurasWepb/PAPA.webp"
     },
     {
       title: "PAPA CRIOLLA",
-      img: "img/prodctos/Verduras/PAPACRIOLLA.png"
+      img: "img/prodctos/VerdurasWepb/PAPACRIOLLA.webp"
     },
     {
       title: "PEPINO",
-      img: "img/prodctos/Verduras/PEPINO.png"
+      img: "img/prodctos/VerdurasWepb/PEPINO.webp"
     },
     {
       title: "PEPINO GUIZO",
-      img: "img/prodctos/Verduras/PEPINO GUIZO.png"
+      img: "img/prodctos/VerdurasWepb/PEPINOGUIZO.webp"
     },
     {
       title: "PIMENTON AMARILLO",
-      img: "img/prodctos/Verduras/PIMENTONAMARILLO.png"
+      img: "img/prodctos/VerdurasWepb/PIMENTONAMARILLO.webp"
     },
     {
       title: "PIMENTÓN ROJO",
-      img: "img/prodctos/Verduras/PIMENTONROJO.png"
+      img: "img/prodctos/VerdurasWepb/PIMENTONROJO.webp"
     },
     {
       title: "PIMENTON VERDE",
-      img: "img/prodctos/Verduras/PIMENTONVERDE.png"
+      img: "img/prodctos/VerdurasWepb/PIMENTONVERDE.webp"
     },
     {
       title: "RABANO",
-      img: "img/prodctos/Verduras/RABANO.png"
+      img: "img/prodctos/VerdurasWepb/RABANO.webp"
     },
     {
       title: "REMOLACHA",
-      img: "img/prodctos/Verduras/REMOLACHA.png"
+      img: "img/prodctos/VerdurasWepb/REMOLACHA.webp"
     },
     {
       title: "REPOLLO",
-      img: "img/prodctos/Verduras/REPOLLO.png"
+      img: "img/prodctos/VerdurasWepb/REPOLLO.webp"
     },
     {
       title: "REPOLLO MORADO",
-      img: "img/prodctos/Verduras/REPOLLOMORADO.png"
+      img: "img/prodctos/VerdurasWepb/REPOLLOMORADO.webp"
     },
     {
       title: "TOMATE",
-      img: "img/prodctos/Verduras/TOMATE.png"
+      img: "img/prodctos/VerdurasWepb/TOMATE.webp"
     },
     {
       title: "TOMATE CHERRY",
-      img: "img/prodctos/Verduras/TOMATECHERRY.png"
+      img: "img/prodctos/VerdurasWepb/TOMATECHERRY.webp"
     },
     {
       title: "YUKA",
-      img: "img/prodctos/Verduras/YUKA.png"
+      img: "img/prodctos/VerdurasWepb/YUKA.webp"
     },
     {
       title: "ZANAHORIA",
-      img: "img/prodctos/Verduras/ZANAHORIA.png"
+      img: "img/prodctos/VerdurasWepb/ZANAHORIA.webp"
     },
     ]

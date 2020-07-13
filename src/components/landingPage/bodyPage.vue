@@ -118,8 +118,8 @@
      </v-flex>
      <v-flex xs12 class="hidden-sm-and-down">
      <v-layout mt-5>
-       <v-flex xs12 md6 layout justify-end style="margin-top:-280px">
-         <img src="../../../public/img/WEBP/DURAZNO 4.png" alt="" width="63%" height="400px" style="margin-right:20px">
+       <v-flex xs12 md6 layout justify-end style="margin-top:-320px">
+         <img src="../../../public/img/prodctos/FrutasWepb/FRUTAS.webp" alt="" width="63%" height="400px" style="margin-right:20px">
        </v-flex> 
      <v-flex xs12 md6 style="padding-left:20px;margin-top:-250px">
        <p id="titleContainer2">
@@ -147,7 +147,7 @@
           </v-flex>
         </v-flex>  
         <v-flex xs12 md6 layout justify-start >
-          <img id="imgCenter" src="../../../public/img/WEBP/BROCOLI 2.png" alt="" width="63%" height="350px">
+          <img id="imgCenter" src="../../../public/img/prodctos/VerdurasWepb/VERDURAS.webp" alt="" width="63%" height="350px">
         </v-flex>
     </v-layout>
     <v-layout mt-5>
@@ -168,7 +168,7 @@
 
     <v-layout class="hidden-md-and-up" row wrap >
          <v-flex xs12 layout justify-center style="margin-top:-400px">
-         <img src="../../../public/img/WEBP/DURAZNO 4.png" alt="" width="90%" height="300px" >
+         <img src="../../../public/img/prodctos/FrutasWepb/FRUTAS.webp" alt="" width="90%" height="300px" >
        </v-flex> 
      <v-flex xs12 style="padding-left:20px;margin-top:-50px">
        <p align="center" id="titleContainer2Responsive">
@@ -182,7 +182,7 @@
      </v-flex> 
      
      <v-flex xs12  layout justify-start >
-          <img id="imgCenter" src="../../../public/img/WEBP/BROCOLI 2.png" alt="" width="90%" height="300px">
+          <img id="imgCenter" src="../../../public/img/prodctos/VerdurasWepb/VERDURAS.webp" alt="" width="90%" height="300px">
       </v-flex>
         <v-flex xs12 style="padding-left:20px;margin-top:50px">
           <p align="center" id="titleContainer2Responsive">
@@ -417,14 +417,16 @@
           </v-flex>
       </v-flex>
       <v-layout row wrap style="padding-top:20px; background-color:#eceeed;">
-      <v-flex xs12 md5 flex-column mt-5>     
-            <p align="center" id="titleH2Footer">Si eres productor del campo,este el mejor sitio para
-vender.</p>
+      <v-flex xs12 md6 flex-column mt-5>     
+            <p align="center" id="titleH2Footer">Tu compromiso.</p>
  <p id="paragraphFooter">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Totam mollitia vitae, ab, 
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      Totam mollitia vitae, ab
+                      Haz parte de nuestra misión social, juntos cuidaremos el medio ambiente. 
+                      Por cada compra que realices en Kokue, un porcentaje será destinado a la 
+                      siembra de árboles nativos y de producción agrícola que serán donados a 
+                      nuestros productores. 
+                      Queremos ayudar a contrarrestar el cambio climático 
+                      y que mejor manera de hacerlo que trabajado todos juntos 
+                      por la construcción de un planeta sostenible.
                   
                     </p>
 <v-flex flex-column id="social" class="hidden-sm-and-down">
@@ -445,7 +447,7 @@ vender.</p>
             </div>
           </v-flex>
       </v-flex>
-      <v-flex id="footerCard" xs12 md7 style=" padding-left:4%; padding-right:1%; margin-top:-50px;" layout justify-center>
+      <v-flex id="footerCard" xs12 md6 style=" padding-left:4%; padding-right:1%; margin-top:-50px;" layout justify-center>
         <v-flex flex-column >
           <v-card width="80%" color="white" style="margin-top:50px; padding:8% 10% 8% 10%" elevation="0" class="hidden-sm-and-down" >
                           <v-form v-model="valid">
@@ -629,16 +631,16 @@ export default {
     itemSelect: ['Foo', 'Bar', 'Fizz', 'Buzz'],
     items: [
       {
-        title: "Pimentón",
-        img: "img/WEBP/product_1@2x.webp"
+        title: "Uva Roja",
+        img: "img/prodctos/FrutasWepb/UVAROJA.webp"
       },
       {
-        title: "Limón Amarillo",
-        img: "img/WEBP/product_2@2x.webp"
+        title: "Durazno",
+        img: "img/prodctos/FrutasWepb/DURAZNO.webp"
       },
       {
-        title: "Lechuga",
-        img: "img/WEBP/product_3@2x.webp"
+        title: "Mangostino",
+        img: "img/prodctos/FrutasWepb/MANGOSTINO.webp"
       },
     ],
     itemsSelect:[
@@ -857,7 +859,7 @@ export default {
   margin-top:20px
 }
 #paragraphFooter{
-  margin: 20px 0px 0px 190px;
+  margin: 20px 0px 0px 120px;
   width: 75%;
   font-size: 25px;
   font-weight: 400;
@@ -964,7 +966,7 @@ export default {
 }
 #titleH2Footer {
   text-align: start;
-  padding-left: 190px;
+  padding-left: 120px;
   padding-right: 60px;
   padding-top: 40px;
   width: 110%;

@@ -1,10 +1,10 @@
 <template>
     <v-layout>
-        <v-card width="350px"  elevation="20"  style=" margin:20px 10px 20px 30px; border-radius:10px">
+        <v-card width="350px"  elevation="20"  style=" margin:20px 20px 20px 20px; border-radius:10px">
             <v-card-text>
                   <v-card-title>
                     <v-flex layout justify-center >
-                   <h3 style="color:#FF7F00"> {{title}} </h3>
+                   <h4 style="color:#FF7F00"> {{title}} </h4>
                    </v-flex>
                 </v-card-title>
                 <v-flex layout justify-center>

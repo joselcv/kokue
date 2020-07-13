@@ -1,66 +1,66 @@
 module.exports = HiervasEspecias = [
     {
       title: "ALBACA",
-      img: "img/prodctos/Hiervas_Especias/ALBACA.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/ALBACA.webp"
     },
     {
       title: "AROMATICAS",
-      img: "img/prodctos/Hiervas_Especias/AROMATICAS.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/AROMATICAS.webp"
     },
     {
       title: "CALENDULA",
-      img: "img/prodctos/Hiervas_Especias/CALENDULA.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/CALENDULA.webp"
     },
     {
       title: "CILANTRO",
-      img: "img/prodctos/Hiervas_Especias/CILANTRO.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/CILANTRO.webp"
     },
     {
       title: "ESPINACA",
-      img: "img/prodctos/Hiervas_Especias/ESPINACA.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/ESPINACA.webp"
     },
     {
       title: "EUCALIPTO",
-      img: "img/prodctos/Hiervas_Especias/EUCALIPTO.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/EUCALIPTO.webp"
     },
     {
       title: "GUASCA",
-      img: "img/prodctos/Hiervas_Especias/GUASCA.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/GUASCA.webp"
     },
     {
       title: "LAUREL",
-      img: "img/prodctos/Hiervas_Especias/LAUREL.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/LAUREL.webp"
     },
     {
       title: "LIMONCILLO",
-      img: "img/prodctos/Hiervas_Especias/LIMONCILLO.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/LIMONCILLO.webp"
     },
     {
       title: "MENTA",
-      img: "img/prodctos/Hiervas_Especias/MENTA.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/MENTA.webp"
     },
     {
       title: "MISUNA VERDE",
-      img: "img/prodctos/Hiervas_Especias/MISUNAVERDE.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/MISUNAVERDE.webp"
     },
     {
       title: "PEREGIL",
-      img: "img/prodctos/Hiervas_Especias/PEREGIL.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/PEREGIL.webp"
     },
     {
       title: "RAICES CHINAS",
-      img: "img/prodctos/Hiervas_Especias/RAICESCHINAS.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/RAICESCHINAS.webp"
     },
     {
       title: "ROMERO",
-      img: "img/prodctos/Hiervas_Especias/ROMERO.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/ROMERO.webp"
     },
     {
       title: "SABILA",
-      img: "img/prodctos/Hiervas_Especias/SABILA.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/SABILA.webp"
     },
     {
       title: "TOMILLO",
-      img: "img/prodctos/Hiervas_Especias/TOMILLO.png"
+      img: "img/prodctos/Hiervas_EspeciasWepb/TOMILLO.webp"
     }
     ]
